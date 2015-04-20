@@ -1,0 +1,397 @@
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+strong{font-weight:700;}em{font-style:italic;}
+
+html {
+	background: url( http://s.renascerredes.com/i/site-bg.jpg ) repeat;
+	font-family: "lucida grande", arial, sans-serif;
+}
+a {
+	color: #056dc4;
+}
+a:hover,
+a:active {
+	color: #258df4;
+}
+footer+div {
+	display: none !important;
+}
+
+article {
+	background: #fff url( http://s.renascerredes.com/i/content-bg.jpg ) repeat-x;
+	border-top: 1px solid #fff;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	width: 950px;
+}
+article h2 {
+	color: #033;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 15px 20px;
+}
+.page-fotos article {
+	background-image: none;
+}
+
+#main-nav {
+	background: url( http://s.renascerredes.com/i/header-bg.jpg ) no-repeat  50% 39px;
+}
+#main-nav.loading {
+	background: url( http://s.renascerredes.com/i/loading.png ) no-repeat 50% 51%;
+}
+#main-nav nav {
+	background: url( http://s.renascerredes.com/i/nav-bg.png ) repeat-x;
+	height: 310px;
+	position: relative;
+}
+.page-internal #main-nav nav {
+	height: 165px;
+}
+.page-produtos #main-nav {
+	background-image: url( http://s.renascerredes.com/i/header-bg-products.jpg );
+}
+.page-conheca #main-nav {
+	background-image: url( http://s.renascerredes.com/i/header-bg-about.jpg );
+}
+.page-contato #main-nav {
+	background-image: url( http://s.renascerredes.com/i/header-bg-contact.jpg );
+}
+#main-nav .cont {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	width: 950px;
+}
+#main-nav h1 a {
+	background: url( http://s.renascerredes.com/i/renascer-logo.png ) no-repeat;
+	height: 70px;
+	left: 20px;
+	position: absolute;
+	text-decoration: none;
+	text-indent: -5000px;
+	width: 249px;
+}
+#main-nav ul {
+	float: right;
+	padding-right: 10px;
+}
+#main-nav ul li {
+	float: left;
+	font-size: 14px;
+}
+#main-nav ul li.last {
+	background: url( http://s.renascerredes.com/i/nav-line.jpg ) repeat-y 100% 0;
+}
+#main-nav ul li a {
+	background: url( http://s.renascerredes.com/i/nav-line.jpg ) repeat-y;
+	color: #fff;
+	display: block;
+	line-height: 38px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+#main-nav ul li a:hover,
+#main-nav ul li a:active {
+	text-decoration: underline;
+}
+.page-produtos #main-nav ul li.link-produtos a,
+.page-fotos #main-nav ul li.link-fotos a,
+.page-conheca #main-nav ul li.link-conheca a,
+.page-contato #main-nav ul li.link-contato a {
+	background-color: #000;
+	text-decoration: underline;
+}
+
+footer {
+	background: #fff;
+	color: #666;
+	font-size: 13px;
+	margin: 0 auto;
+	width: 950px;
+}
+footer .cont {
+	border-top: 1px solid #baced9;
+	margin: 0 15px;
+	overflow: hidden;
+	padding: 5px 2px 8px;
+}
+footer .links {
+	float: left;
+	padding-top: 2px;
+}
+footer .sponsor {
+	background: url( http://s.renascerredes.com/i/equiplex-logo.jpg ) no-repeat 100% 50%;
+	float: right;
+	line-height: 40px;
+	margin-right: 5px;
+	padding-right: 85px;
+}
+footer .sponsor strong {
+	display: none;
+}
+
+#home-items {
+	padding: 0 20px;
+}
+#home-items ul {
+	overflow: hidden;
+}
+#home-items li {
+	float: left;
+	position: relative;
+}
+#home-items li.step1,
+#home-items li.step2 {
+	width: 340px;
+}
+#home-items li.step3 {
+	width: 230px;
+}
+#home-items span.txt {
+	display: block;
+	font-size: 14px;
+	padding: 130px 15px 0;
+	text-align: center;
+	width: 200px;
+}
+#home-items span.ico {
+	background: url( http://s.renascerredes.com/i/home-items.png ) no-repeat;
+	height: 121px;
+	left: 5px;
+	position: absolute;
+	top: 0;
+	width: 217px;
+}
+#home-items li.step1 span.ico {
+	height: 111px;
+	left: 25px;
+	width: 177px;
+	top: 15px;
+}
+#home-items li.step2 span.ico {
+	background-position: 0 -115px;
+}
+#home-items li.step3 span.ico {
+	background-position: -255px -115px;
+}
+#home-items span.arr {
+	background: url( http://s.renascerredes.com/i/home-items.png ) no-repeat -198px 0;
+	height: 69px;
+	left: 235px;
+	position: absolute;
+	top: 40px;
+	width: 85px;
+}
+#home-items p {
+	font-size: 11px;
+	padding-top: 35px;
+}
+
+#quality {
+	color: #333;
+	line-height: 1.3;
+	padding: 0 20px 15px;
+}
+#quality p {
+	font-size: 14px;
+	padding: 4px 0;
+}
+#quality .where {
+	margin: 0 auto;
+	padding: 10px 0 20px;
+	overflow: hidden;
+	width: 900px;
+}
+#quality .where li {
+	background: url( http://s.renascerredes.com/i/where-it-can-be-used.png ) no-repeat;
+	float: left;
+	font-size: 15px;
+	font-weight: 700;
+	padding-top: 130px;
+	text-align: center;
+	width: 300px;
+}
+#quality .where .w1 {
+	background-position: 35px 0;
+}
+#quality .where .w2 {
+	background-position: -368px 0;
+}
+#quality .where .w3 {
+	background-position: -745px 0;
+}
+#quality h3 {
+	font-size: 15px;
+	font-weight: 700;
+	padding: 15px 0 0;
+}
+#quality .specs {
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 10px 0 15px;
+	overflow: hidden;
+	width: 880px;
+}
+#quality .specs li {
+	list-style: disc inside;
+}
+
+#about {
+	color: #333;
+	line-height: 1.3;
+	padding: 0 20px 10px;
+	position: relative;
+	top: -5px;
+}
+#about p {
+	font-size: 14px;
+	padding: 4px 0 14px;
+}
+/*
+#about p span {
+	float: left;
+	font-size: 28px;
+	font-weight: 700;
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
+}
+*/
+
+#contact {
+	color: #333;
+	line-height: 1.3;
+	padding: 0 20px 20px;
+}
+#contact .success {
+	background: url( http://s.renascerredes.com/i/success.png ) no-repeat 3px 4px;
+	color: #1a8b1c;
+	font-size: 18px;
+	padding: 0 0 21px 40px;
+}
+#contact .success span {
+	color: #000;
+	display: block;
+	font-size: 12px;
+}
+#contact .intro {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+#contact section {
+	overflow: hidden;
+}
+#by-email {
+	background: url( http://s.renascerredes.com/i/contact-mail.png ) no-repeat 10px 10px;
+	float: left;
+	padding-left: 110px;
+	width: 420px;
+}
+#by-email .field {
+	padding-bottom: 12px;
+}
+#by-email label {
+	display: block;
+	font-size: 14px;
+	padding-bottom: 2px;
+}
+#by-email input {
+	border: 1px solid #666;
+	font-size: 14px;
+	padding: 5px 3px;
+	width: 230px;
+}
+#by-email #form_prefix {
+	text-align: right;
+	width: 40px;
+}
+#by-email textarea {
+	border: 1px solid #666;
+	font-size: 14px;
+	height: 100px;
+	padding: 5px 3px;
+	width: 320px;
+}
+#by-email .actions {
+	padding-top: 12px;
+	text-align: center;
+	width: 320px;
+}
+#by-email .actions button {
+	background: transparent url( http://s.renascerredes.com/i/contact-send.png ) no-repeat 0 0;
+	border-width: 0;
+	cursor: pointer;
+	height: 47px;
+	text-indent: -5000px;
+	width: 193px;
+}
+#by-phone {
+	background: url( http://s.renascerredes.com/i/contact-phone.png ) no-repeat 0 10px;
+	float: right;
+	padding-left: 125px;
+	width: 250px;
+}
+#by-phone .phones {
+	font-size: 24px;
+	padding: 12px 0;
+}
+#by-phone .address {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+#photos {
+	overflow: hidden;
+	padding: 25px 0 20px 25px;
+}
+#photos li {
+	float: left;
+	padding: 0 30px 20px 0;
+}
+#photos a {
+	outline-width: 0;
+}
+#photos a img {
+	border: 2px solid #666;
+	display: block;
+}
+#photos a.selected img,
+#photos a:hover img {
+	border: 2px solid #258df4;
+}
+.photos-nav {
+	outline-width: 0;
+	position: absolute;
+}
+.photos-nav span {
+	background: url( http://s.renascerredes.com/i/photos-arrows.png );
+	height: 50px;
+	left: 21px;
+	margin-top: -25px;
+	position: absolute;
+	text-decoration: none;
+	text-indent: -5000px;
+	top: 50%;
+	width: 38px;
+}
+#photos-prev {
+	bottom: 0;
+	left: 0;
+	top: 70px;
+	width: 80px;
+}
+#photos-next {
+	bottom: 0;
+	right: 0;
+	top: 70px;
+	width: 80px;
+}
+#photos-next span {
+	background-position: 0 -50px;
+}
