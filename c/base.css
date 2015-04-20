@@ -290,8 +290,24 @@ footer .sponsor strong {
 #by-email {
 	background: url( /i/contact-mail.png ) no-repeat 10px 10px;
 	float: left;
-	padding-left: 110px;
-	width: 420px;
+	padding: 25px 0 100px 120px;
+	width: 410px;
+}
+#by-email a {
+	display: block;
+	font-size: 36px;
+	text-align: center;
+	text-decoration: none;
+}
+#by-email a strong {
+	font-size: 48px;
+}
+#by-email a:hover strong {
+	text-decoration: underline;
+}
+#by-email a span {
+	color: #666;
+	text-decoration: none;
 }
 #by-email .field {
 	padding-bottom: 12px;
